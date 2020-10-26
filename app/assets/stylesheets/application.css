@@ -59,7 +59,7 @@ section .title{
 section .title::before{
     content: "";
     position: absolute;
-    bottom: 0px;
+    bottom: 16px;
     left: 50%;
     width: 180px;
     height: 3px;
@@ -73,7 +73,6 @@ section .title::after{
     font-size: 20px;
     color: crimson;
     padding: 0 5px;
-    background: #fff;
     transform: translateX(-50%);
 }
 
@@ -165,7 +164,7 @@ section .title::after{
 /* home section styling */
 .home{
     display: flex;
-    background: url("portfolio/images/banner.jpg") no-repeat center;
+    /*background: url('<%= image_path "portfolio/images/banner.jpg" %>') no-repeat center;*/
     height: 100vh;
     color: #fff;
     min-height: 500px;
@@ -374,9 +373,86 @@ section .title::after{
     width: 70%;
 }
 
+/* projects section styling */
+.projects .title::after{
+    content: "Past & Present";
+}
+
+.project .title::before {
+    content: "";
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+.services, .projects{
+    color:#fff;
+    background: #111;
+}
+.projects .carousel .card{
+    background: #222;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+.projects .carousel .card:hover{
+    background: crimson;
+}
+.projects .carousel .card .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+.projects .carousel .card:hover .box{
+    transform: scale(1.05);
+}
+.projects .carousel .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+.projects .carousel .card img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border: 5px solid crimson;
+    transition: all 0.3s ease;
+}
+.projects .carousel .card:hover img{
+    border-color: #fff;
+}
+.owl-dots{
+    text-align: center;
+    margin-top: 20px;
+}
+.owl-dot{
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none!important;
+    border-radius: 50%;
+    border: 2px solid crimson!important;
+    transition: all 0.3s ease;
+}
+.owl-dot.active{
+    width: 35px;
+    border-radius: 14px;
+}
+.owl-dot.active,
+.owl-dot:hover{
+    background: crimson!important;
+}
+
 /* teams section styling */
 .teams .title::after{
-    content: "Past & Present";
+    content: "Cream Of The Crop";
 }
 .teams .carousel .card{
     background: #222;
