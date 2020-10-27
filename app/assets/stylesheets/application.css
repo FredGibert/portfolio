@@ -40,7 +40,7 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-.projects .other, .about, .services, .skills, .teams, .contact, footer{
+.projects, .other, .about, .services, .skills, .teams, .contact, footer{
     font-family: 'Poppins', sans-serif;
 }
 .projects .projects-content,
@@ -437,14 +437,14 @@ section .title::after{
 }
 /* other experience section styling */
 .other .title::after{
-    content: "who i am";
+    content: "what We Can Do For You";
 }
 .other .other-content .left{
     width: 45%;
 }
 .other .other-content .left img{
     height: 400px;
-    width: 400px;
+    width: 487px;
     object-fit: cover;
     border-radius: 6px;
 }
@@ -540,6 +540,62 @@ section .title::after{
 .owl-dot.active,
 .owl-dot:hover{
     background: crimson!important;
+}
+
+/* video section styling */
+
+.video-centered {
+    width: 560px;
+    height: max-width;
+    top: 0; right: 0;
+    bottom: 0; left: 0;
+    margin: auto ;
+}
+
+.video, .teams{
+    color:#fff;
+    background: #111;
+}
+.video .title::before,
+.teams .title::before,
+.projects .title::before{
+    background: #fff;
+}
+.video .title::after,
+.teams .title::after{
+    background: #111;
+    content: "what i provide";
+}
+.embed-responsive .embed-responsive-21by9 .video{
+    width: calc(33% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.video .serv-content .card:hover{
+    background: crimson;
+}
+.video .serv-content .card .box{
+    transition: all 0.3s ease;
+}
+.video .serv-content .card:hover .box{
+    transform: scale(1.05);
+}
+.video .serv-content .card i{
+    font-size: 50px;
+    color: crimson;
+    transition: color 0.3s ease;
+}
+.video .serv-content .card:hover i{
+    color: #fff;
+}
+.video .serv-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
 }
 
 /* contact section styling */

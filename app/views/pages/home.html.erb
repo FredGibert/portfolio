@@ -37,7 +37,7 @@
     </nav>
 
     <!-- home section start -->
-    <section class="home" id="home" style="background-image: url('<%= image_path "banner2.png" %>')">
+    <section class="home" id="home" style="background-image: url('<%= image_path "banner.png" %>')">
         <div class="max-width">
             <div class="home-content">
                 <div class="text-1">Hello, my name is</div>
@@ -150,76 +150,64 @@
     <!-- projects section start -->
     <section class="projects" id="projects">
       <div class="width">
-        <h2 class="title">My Projects</h2>
-          <div class="carousel owl-carousel">
-                <div class="projects-content">
-                    <div class="box">
-                        <img url <%= image_tag "study-1.png" %>
-                    </div>
-                </div>
-                <div class="projects-content">
-                    <div class="box">
-                        <img url <%= image_tag "study-2.png" %>
-                    </div>
-                </div>
-                <div class="projects-content">
-                    <div class="box">
-                        <img url <%= image_tag "study-3.png" %>
-                    </div>
-                </div>
-                <div class="projects-content">
-                    <div class="box">
-                        <img url <%= image_tag "mygames1.png" %>
-                        <div class="text">Someone name</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                </div>
-                <div class="projects-content">
-                    <div class="box">
-                        <img url <%= image_tag "mygames2.png" %>
-                        <div class="text">Someone name</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                </div>
-                <div class="projects-content">
-                    <div class="box">
-                        <img url <%= image_tag "mygames3.jpg" %>
-                        <div class="text">Someone name</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                </div>
-                <div class="projects-content">
-                    <div class="box">
-                        <img url <%= image_tag "aircasttle1.jpg" %>
-                        <div class="text">Someone name</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <img url <%= image_tag "aircasttle2.jpg" %>
-                        <div class="text">Someone name</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <img url <%= image_tag "aircasttle2.jpg" %>
-                        <div class="text">Someone name</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                </div>
+      <h2 class="title">My Projects</h2>
+      <div class="carousel owl-carousel">
+        <div class="projects-content">
+          <div class="box">
+            <%= image_tag ("study-1.png") %>
+          </div>
+        </div>
+          <div class="projects-content">
+            <div class="box">
+              <%= image_tag ("study-2.png") %>
             </div>
+          </div>
+          <div class="projects-content">
+            <div class="box">
+              <%= image_tag ("study-3.png") %>
+            </div>
+          </div>
+          <div class="projects-content">
+            <div class="box">
+              <%= image_tag ("mygames1.png") %>
+            </div>
+          </div>
+          <div class="projects-content">
+            <div class="box">
+              <%= image_tag ("mygames2.png") %>
+            </div>
+          </div>
+          <div class="projects-content">
+            <div class="box">
+              <%= image_tag ("mygames3.png") %>
+            </div>
+          </div>
+          <div class="projects-content">
+            <div class="box">
+              <%= image_tag "em1.png" %>
+            </div>
+          </div>
+          <div class="projects-content">
+            <div class="box">
+              <%= image_tag "em2.png" %>
+            </div>
+          </div>
+          <div class="projects-content">
+            <div class="box">
+              <%= image_tag "em3.png" %>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- other experience section start -->
-    <section class="about" id="about">
+    <section class="other" id="other">
         <div class="max-width">
-            <h2 class="title">Avant le code</h2>
-            <div class="about-content">
+            <h2 class="title">We Here To Help You Grow Your Business</h2>
+            <div class="other-content">
                 <div class="column left">
-                    <%= image_tag("fred-1.jpg")%>
+                    <%= image_tag("team1.jpg")%>
                 </div>
                 <div class="column right">
                     <div class="text">I'm Fred and I'm a <span class="typing-2"></span></div>
@@ -237,22 +225,22 @@
             <div class="carousel owl-carousel" data-interval="10000">
                 <div class="card">
                     <div class="box">
-                        <img url <%= image_tag "profile-1.jpg" %>
-                        <div class="text">Someone name</div>
+                        <img url <%= image_tag "julien_e.jpeg" %>
+                        <div class="text">Julien Evano</div>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
-                        <img url <%= image_tag "profile-2.jpg" %>
-                        <div class="text">Someone name</div>
+                        <img url <%= image_tag "julien_v.jpg" %>
+                        <div class="text">Julien Victor</div>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
-                        <img url <%= image_tag "profile-3.jpg" %>
-                        <div class="text">Someone name</div>
+                        <img url <%= image_tag "edouard.jpeg" %>
+                        <div class="text">Edouard Goisbault</div>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
                 </div>
@@ -271,6 +259,70 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- team skills section start -->
+    <section class="skills" id="skills">
+        <div class="max-width">
+            <h2 class="title">Our skills</h2>
+            <div class="skills-content">
+                <div class="column left">
+                    <div class="text">My creative skills & experiences.</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, ratione error est recusandae consequatur, iusto illum deleniti quidem impedit, quos quaerat quis minima sequi. Cupiditate recusandae laudantium esse, harum animi aspernatur quisquam et delectus ipsum quam alias quaerat? Quasi hic quidem illum. Ad delectus natus aut hic explicabo minus quod.</p>
+                    <a href="#">Read more</a>
+                </div>
+                <div class="column right">
+                    <div class="bars">
+                        <div class="info">
+                            <span>HTML</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="line html"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>CSS</span>
+                            <span>60%</span>
+                        </div>
+                        <div class="line css"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>JavaScript</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="line js"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>PHP</span>
+                            <span>50%</span>
+                        </div>
+                        <div class="line php"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>MySQL</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="line mysql"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- video section start -->
+    <section class="video" id="video">
+      <div class="video-width">
+        <h2 class="title">Profesional And Friendly Team</h2>
+        <div class="justify-content-md-center">
+          <div class="video-centered">
+            <div class="embed-responsive embed-responsive-21by9">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/-DFDKqQzGio" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
         </div>
     </section>
 
