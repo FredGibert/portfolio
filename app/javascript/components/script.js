@@ -37,21 +37,21 @@ const loadjs = () => {
 
       // typing text animation script
       var typed = new Typed(".typing", {
-          strings: ["Développeur web fullstack", "Entrepreneur", "Digital Marketer"],
+          strings: ["Web Developer Full-Stack", "Entrepreneur", "Digital Marketer"],
           typeSpeed: 100,
           backSpeed: 60,
           loop: true
       });
 
       var typed = new Typed(".typing-2", {
-          strings: ["Développeur web fullstack", "Entrepreneur", "Digital Marketer"],
+          strings: ["Web Developer Full-Stack", "Entrepreneur", "Digital Marketer"],
           typeSpeed: 100,
           backSpeed: 60,
           loop: true
       });
 
       var typed = new Typed(".typing-3", {
-          strings: ["Web developers", "Web designers", "Digital marketers", "SEO experts", "Réalisateurs", "Photographes"],
+          strings: ["Web Developers", "Web Designers", "Digital Marketers", "SEO Experts", "Business Coach", "Réalisateurs", "Photographes"],
           typeSpeed: 100,
           backSpeed: 60,
           loop: true
