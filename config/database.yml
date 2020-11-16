@@ -22,4 +22,4 @@ test:
 
 production:
   <<: *default
-  url: <%= ENV['postgresql://usnuhs7dslmkjvjmwfaq:myICrcrh0T79qfD1FjJY@b5ic6gf4j9wphmzyddpr-postgresql.services.clever-cloud.com:5432/b5ic6gf4j9wphmzyddpr'] %>
+  url: <%= ENV['postgresql://um4xl96pzbx17duzfq7f:XrGgtbuCiURa152R5Rgb@bqufqr4g01wm6zyxkzfs-postgresql.services.clever-cloud.com:5432/bqufqr4g01wm6zyxkzfs'] %>
