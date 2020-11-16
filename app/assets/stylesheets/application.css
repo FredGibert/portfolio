@@ -1,5 +1,6 @@
 /*  import google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+@import "bootstrap/scss/bootstrap";
 
 *{
     margin: 0;
@@ -487,14 +488,16 @@ section .title::after{
 }
 .about-us .about-us-content .right .text{
     font-size: 25px;
-    font-weight: 600;
+    font-weight: 700;
     margin-bottom: 10px;
 }
 .about-us .about-us-content .right .text span{
     color: crimson;
 }
-.about-us .about-us-content .right p{
+.about-us .about-us-content .right p span{
     text-align: justify;
+    color: crimson;
+    font-weight: 600;
 }
 .about-us .about-us-content .right a{
     display: inline-block;
@@ -681,7 +684,7 @@ section .title::after{
 .video .title::after,
 .teams .title::after{
     background: #111;
-    content: "Exelixi";
+    content: "Webob";
 }
 .embed-responsive .embed-responsive-21by9 .video{
     width: calc(33% - 20px);
